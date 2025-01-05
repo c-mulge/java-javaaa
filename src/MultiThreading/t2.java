@@ -15,6 +15,7 @@ public class t2 implements Runnable {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName());
+        System.out.println("t2 running");
     }
 }
 
