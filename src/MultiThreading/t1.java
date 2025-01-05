@@ -15,5 +15,6 @@ public class t1 {
 
         // Print the name of the current thread (main thread)
         System.out.println(Thread.currentThread().getName());
+        System.out.println("T1 is running");
     }
 }
