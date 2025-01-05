@@ -1,9 +1,16 @@
+package Example;
+
 import java.lang.*;
-import java.util.*;
-import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+class excp extends Exception{
+    public excp(String m){
+        super(m);
+    }
+}
+
 class examp4 extends JFrame implements ActionListener
 {
     JFrame j1;
@@ -64,6 +71,11 @@ class examp4 extends JFrame implements ActionListener
 
     public static void main (String[]args)
     {
+        try{
         examp4 q=new examp4();
+
+        }catch(ArithmeticException e){
+
+        }
     }
 }

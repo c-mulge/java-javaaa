@@ -16,13 +16,13 @@ public class problem1 {
         System.out.print("Enter number to be searched: ");
         int num=sc.nextInt();
         boolean isfound=false;
-        for(int i=0;i<a.length;i++){
-            if(a[i]==num){
-                isfound=true;
+        for (int j : a) {
+            if (j == num) {
+                isfound = true;
                 break;
             }
         }
-        if(isfound==true) System.out.println("Number: "+num+" is found");
+        if(isfound) System.out.println("Number: "+num+" is found");
         else System.out.println("Number: "+num+" is not found");
 
         System.out.println("Now let's do convert lowercase to uppercase");
@@ -30,6 +30,13 @@ public class problem1 {
         String str=sc.next();
         System.out.println("String to lowercase: "+str.toLowerCase());
         System.out.println("String to uppercase: "+str.toUpperCase());
+
+        System.out.println("Now let's compare strings: ");
+        System.out.print("Enter one more string: ");
+        String str2=sc.next();
+        boolean flag2=str.equals(str2);
+        if(flag2) System.out.println("Are equal");
+        else System.out.println("Are not equal");
 
         sc.close();
 

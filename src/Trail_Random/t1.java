@@ -1,5 +1,6 @@
 package Trail_Random;
 
+//website name to IP generator
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -17,6 +18,7 @@ public class t1 extends JFrame implements ActionListener{
         setSize(400,400);
         setLayout(null);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     public void actionPerformed(ActionEvent e) {
         try{

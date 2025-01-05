@@ -2,7 +2,7 @@ package Projects.rental;
 
 import java.util.Scanner;
 
-public class main {
+public class web {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to CaRental");
@@ -16,6 +16,7 @@ public class main {
             c.admin_verify();
         } else if (choice.equals("user")) {
             c.user_login();
+            c.user_verify();
         }else{
             System.out.println("Select correctly");
         }
